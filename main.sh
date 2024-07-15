@@ -1,15 +1,11 @@
 #!/bin/bash
 
-# Algo
-"""
-1. search the website and show suggestions
-2. if not found
-    prompt user to search again
-3. if found
-    ask user to select
-4. display model info if any 
-5. displa model info in regex
-"""
+echo "Searching for : $@"
 
-content=$(curl -L google.com)
+
+
+content = $(wget gsmarena\.com\/motorola_moto_g85-13144\.php -q -O -)
+echo $content 
+
+
 
